@@ -28,28 +28,29 @@ header {
     header .container nav .logo {
       float: left;
       margin: 2vh 2vw; }
-    header .container nav .links {
+    header .container nav .links ul {
       align-items: flex-end;
       display: flex;
       flex-direction: row;
       justify-content: center;
       font-size: 20px; }
-      header .container nav .links div {
+      header .container nav .links ul li {
         padding: 5vh 20px; }
-        header .container nav .links div:hover {
+        header .container nav .links ul li:hover {
           border-top: 2px solid #fff; }
     header .container .content .baner {
       font-family: 'Yeseva One', cursive;
       font-size: 90px;
+      line-height: 1.4;
       margin: 10vh auto 0 auto;
       width: 70vw;
       text-align: center; }
-    header .container .content .divider {
+    header .container .content figure {
       margin: 6vh auto 4vh auto; }
     header .container .content .buttons {
       display: flex;
       justify-content: center; }
-      header .container .content .buttons .button {
+      header .container .content .buttons button {
         display: inline-block;
         margin: 5vh 1vw;
         padding: 15px 70px 15px 70px;
@@ -111,8 +112,9 @@ header {
   box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
   color: #cc9900;
   font-family: 'Yeseva One', cursive; }
-  .menu .row div {
-    padding: 10px; }
+  .menu .row p {
+    padding: 10px;
+    margin: 0; }
   .menu .title {
     font-size: 36px;
     text-align: center;
@@ -140,7 +142,7 @@ header {
       .reviews .container .content .title {
         font-size: 36px;
         text-align: center; }
-      .reviews .container .content .text {
+      .reviews .container .content p {
         font-size: 22px;
         line-height: 40px; }
 
@@ -148,18 +150,19 @@ header {
   background-image: url("images/about/section-background.png");
   background-size: cover;
   color: #cc9900; }
-  .reservations .image {
+  .reservations figure {
     display: inline-block;
     height: 80%;
     margin-right: 20px; }
   .reservations .content {
     display: inline-block;
     margin-left: 10vw;
-    width: 350px; }
+    width: 350px;
+    text-align: center; }
     .reservations .content .title {
       font-size: 36px;
       text-align: center; }
-    .reservations .content .text {
+    .reservations .content p {
       color: #4c4c4c;
       margin-bottom: 50px;
       text-align: center;
@@ -197,16 +200,13 @@ footer {
     margin: 20vh auto 10vh auto; }
   header .container .content .divider {
     display: none; }
-
   .about {
     padding: 5vh 5vw; }
     .about .dish {
       width: 500px;
       height: 500px; }
-
   .ingredients .container .content {
     width: 50vw; }
-
   .reservations {
     text-align: center; }
     .reservations .image {
@@ -214,9 +214,9 @@ footer {
     .reservations .content {
       margin: 0 auto;
       width: 60vw; }
-
   footer .title {
     margin-top: 5vh; } }
+
 @media only screen and (max-width: 1000px) {
   header .container {
     width: 100%; }
@@ -228,14 +228,12 @@ footer {
     header .container .content .baner {
       margin-top: 20vh;
       width: 98vw; }
-
   .about .flex-wrapper {
     margin: 0 auto;
     display: block; }
   .about .dish {
     display: none; } }
+
 @media only screen and (max-width: 600px) {
   footer .container {
     padding: 0; } }
-
-/*# sourceMappingURL=style.css.map */

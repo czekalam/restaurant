@@ -30,13 +30,13 @@ header {
         float: left;
         margin: 2vh 2vw;
       }
-      .links {
+      .links ul {
         align-items: flex-end;
         display: flex;
         flex-direction: row;
         justify-content: center;
         font-size: 20px;
-        div {
+        li {
           padding: 5vh 20px;   
           &:hover {
             border-top: 2px solid #fff;
@@ -48,17 +48,18 @@ header {
       .baner {
         font-family: 'Yeseva One', cursive;
         font-size: 90px;
+        line-height: 1.4;
         margin: 10vh auto 0 auto;
         width: 70vw;
         text-align: center;
       }
-      .divider{
+      figure {
         margin: 6vh auto 4vh auto;
       }
       .buttons {
         display: flex;
         justify-content: center;
-        .button {
+        button {
           display: inline-block;
           margin: 5vh 1vw;
           padding: 15px 70px 15px 70px;
@@ -136,8 +137,9 @@ header {
   box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
   color: #cc9900;
   font-family: 'Yeseva One', cursive;
-  .row div{
+  .row p{
     padding: 10px;
+    margin:0;
   }
   .title {
     font-size: 36px;
@@ -171,7 +173,7 @@ header {
         font-size: 36px;
         text-align: center;
       }
-      .text {
+      p {
         font-size: 22px;
         line-height: 40px;
       }
@@ -182,7 +184,7 @@ header {
   background-image: url("images/about/section-background.png");
   background-size: cover;
   color: #cc9900;
-  .image {
+  figure {
     display: inline-block;
     height: 80%;
     margin-right: 20px;
@@ -191,11 +193,12 @@ header {
     display: inline-block;
     margin-left: 10vw;
     width: 350px;
+    text-align: center;
     .title {
       font-size: 36px;
       text-align: center;
     }
-    .text {
+    p {
       color: #4c4c4c;
       margin-bottom:50px; 
       text-align: center;

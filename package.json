@@ -1,0 +1,23 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "<a href=\"https://czekalam.github.io/restaurant\">link</a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czekalam/restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/czekalam/restaurant/issues"
+  },
+  "homepage": "https://github.com/czekalam/restaurant#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
